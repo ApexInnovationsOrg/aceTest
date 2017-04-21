@@ -1,0 +1,5 @@
+node_modules
+testCookie.txt
+*.env
+reports/
+screenshots/

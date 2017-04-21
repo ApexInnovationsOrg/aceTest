@@ -1,0 +1,21 @@
+{
+  "name": "acetest",
+  "version": "1.0.0",
+  "description": "Testing framework for ACE",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ApexInnovationsOrg/aceTest.git"
+  },
+  "author": "Apex Innovations",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ApexInnovationsOrg/aceTest/issues"
+  },
+  "dependencies": {
+    "chromedriver": "^2.29.0",
+    "env2": "^2.1.1",
+    "geckodriver": "^1.5.0",
+    "selenium-download": "^2.0.10"
+  }
+}
