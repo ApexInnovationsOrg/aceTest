@@ -1,5 +1,6 @@
 node_modules
 testCookie.txt
-*.env
+.env
 reports/
 screenshots/
+selenium-debug.log
