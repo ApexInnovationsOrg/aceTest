@@ -54,6 +54,27 @@ module.exports = {
 		.click('#ACEActionGroups')
 		.pause(100)
 		.assert.elementPresent('.aceTable','Table present for Action Groups')
+		.click('.pageIdentify')
+		.execute("$('#ACEModal button[data-dismiss=\"modal\"]').trigger('click')")
+		.pause(100)
+  },
+  'Create a text element': (browser)=>{
+  	browser
+  		.execute('loadPage("PAGE_380100006")')
+  		.pause(500)
+  		.click('.pageIdentify')
+  		.pause(501)
+  		.click('#ACEAddElement')
+  		.execute("$('li[data-option=\"live_text\"]').trigger('click')")
+  		.pause(50)
+  		.execute("$('.saveContentTypeText').trigger('click')")
+		.execute("tinymce.activeEditor.execCommand('mceInsertContent', false, 'testing text');")
+  		.pause(1000)
+  		.click('#ACESaveChanges')
+  		.pause(1000)
+  		.execute("$('.confirm').trigger('click')")
+  		.pause(5000)
+
   },
   'end':function(browser){
   	browser.end();
