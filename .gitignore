@@ -5,3 +5,4 @@ reports/
 screenshots/
 selenium-debug.log
 selenium-server.log
+package-lock.json
