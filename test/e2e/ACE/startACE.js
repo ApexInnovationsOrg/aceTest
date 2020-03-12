@@ -1,8 +1,10 @@
 require('env2')('.env');
 module.exports = {
+  tags:['ACE'],
   before : function(browser)
   {
   	    browser.url('https://' + process.env.HOST + '/admin')
+		.waitForElementVisible('body')
         .setValue('input[name="Username"]', process.env.USER)
         .setValue('input[name="Password"]', process.env.PW)
         .click('input[type="submit"]')

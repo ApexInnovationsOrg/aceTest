@@ -4,3 +4,4 @@ testCookie.txt
 reports/
 screenshots/
 selenium-debug.log
+selenium-server.log
