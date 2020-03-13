@@ -6,7 +6,8 @@
   "scripts": {
     "test": "nightwatch",
     "basic": "nightwatch --tag basic -e default",
-    "e2e-setup": "selenium-standalone install"
+    "e2e-setup": "selenium-standalone install",
+    "reports": "nightwatch --tag userReports -e default"
   },
   "repository": {
     "type": "git",
