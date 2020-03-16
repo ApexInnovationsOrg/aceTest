@@ -50,7 +50,7 @@ module.exports = {
 		.pause(1000)
 		.execute("$('div[data-param=\"ProductID\"] li[data-id=\"12\"]').trigger('click')")	
 		.execute("$('button#reportSubmitButton').trigger('click')")	
-		.waitForElementPresent('div#benchmarking',30000,'Report ran')
+		.waitForElementPresent('div#benchmarking',60000,'Report ran')
   },
   'CE Report': function(browser){
   	browser
@@ -61,7 +61,7 @@ module.exports = {
 		.pause(1000)
 		.execute("$('div[data-param=\"ProductID\"] li[data-id=\"12\"]').trigger('click')")	
 		.execute("$('button#reportSubmitButton').trigger('click')")
-		.waitForElementPresent('div#cereport',30000,'Report ran')
+		.waitForElementPresent('div#cereport',60000,'Report ran')
   },
   'Completion Progress Report': function(browser){
   	browser
@@ -72,7 +72,7 @@ module.exports = {
 		.pause(1000)
 		.execute("$('div[data-param=\"ProductID\"] li[data-id=\"12\"]').trigger('click')")	
 		.execute("$('button#reportSubmitButton').trigger('click')")
-		.waitForElementPresent('div#completionprogress',30000,'Report ran')
+		.waitForElementPresent('div#completionprogress',60000,'Report ran')
   },
   'Course Evaluations Report': function(browser){
   	browser
@@ -81,7 +81,7 @@ module.exports = {
 		.pause(1000)
 		.execute("$('div[data-param=\"ProductID\"] li[data-id=\"12\"]').trigger('click')")	
 		.execute("$('button#reportSubmitButton').trigger('click')")
-		.waitForElementPresent('div#courseevaluations',30000,'Report ran')
+		.waitForElementPresent('div#courseevaluations',60000,'Report ran')
   },
   'EHAC Summary Report': function(browser){
   	browser
@@ -91,7 +91,7 @@ module.exports = {
 		.execute("$('input[data-param=\"EndDate\"]').data('value','2020-03-01')")
 		.pause(1000)
 		.execute("$('button#reportSubmitButton').trigger('click')")
-		.waitForElementPresent('div#ehacsummary',30000,'Report ran')
+		.waitForElementPresent('div#ehacsummary',60000,'Report ran')
   },
   'License Usage Report': function(browser){
   	browser
@@ -100,7 +100,7 @@ module.exports = {
 		.pause(1000)
 		.execute("$('div[data-param=\"LicenseID\"] li[data-id=\"9037\"]').trigger('click')")	
 		.execute("$('button#reportSubmitButton').trigger('click')")
-		.waitForElementPresent('div#licenseusage',30000,'Report ran')
+		.waitForElementPresent('div#licenseusage',60000,'Report ran')
   },
   'NIHSS Summary Report': function(browser){
   	browser
@@ -110,7 +110,7 @@ module.exports = {
 		.execute("$('input[data-param=\"EndDate\"]').data('value','2020-01-16')")
 		.pause(1000)
 		.execute("$('button#reportSubmitButton').trigger('click')")
-		.waitForElementPresent('div#nihsssummary',30000,'Report ran')
+		.waitForElementPresent('div#nihsssummary',60000,'Report ran')
   },
   'NIHSS Time in Test Report': function(browser){
   	browser
@@ -120,7 +120,7 @@ module.exports = {
 		.execute("$('input[data-param=\"EndDate\"]').data('value','2020-01-28')")
 		.pause(1000)
 		.execute("$('button#reportSubmitButton').trigger('click')")
-		.waitForElementPresent('div#nihsstimeintest',30000,'Report ran')
+		.waitForElementPresent('div#nihsstimeintest',60000,'Report ran')
   },
   'Parkview Study Course Evaluations Report': function(browser){
   	browser
@@ -129,7 +129,7 @@ module.exports = {
 		.pause(1000)
 		.execute("$('div[data-param=\"ProductID\"] li[data-id=\"68\"]').trigger('click')")	
 		.execute("$('button#reportSubmitButton').trigger('click')")
-		.waitForElementPresent('div#parkviewstudycourseevaluations',30000,'Report ran')
+		.waitForElementPresent('div#parkviewstudycourseevaluations',60000,'Report ran')
   },
   'Parkview Study Report': function(browser){
   	browser
@@ -139,7 +139,7 @@ module.exports = {
 		.execute("$('input[data-param=\"EndDate\"]').data('value','2020-01-01')")
 		.pause(1000)
 		.execute("$('button#reportSubmitButton').trigger('click')")
-		.waitForElementPresent('div#parkviewstudy',30000,'Report ran')
+		.waitForElementPresent('div#parkviewstudy',60000,'Report ran')
   },
   'Pretest Details Report': function(browser){
   	browser
@@ -150,7 +150,7 @@ module.exports = {
 		.execute("$('div[data-param=\"ProductID\"] li[data-id=\"9\"]').trigger('click')")
 		.pause(1000)
 		.execute("$('button#reportSubmitButton').trigger('click')")
-		.waitForElementPresent('div#presetdetails',30000,'Report ran')
+		.waitForElementPresent('div#presetdetails',60000,'Report ran')
   },
   'Q and A Breakdown Report': function(browser){
   	browser
@@ -159,7 +159,7 @@ module.exports = {
 		.pause(1000)
 		.execute("$('div[data-param=\"ProductID\"] li[data-id=\"12\"]').trigger('click')")
 		.execute("$('button#reportSubmitButton').trigger('click')")
-		.waitForElementPresent('div#qandabreakdown',30000,'Report ran')
+		.waitForElementPresent('div#qandabreakdown',60000,'Report ran')
   },
   'Test Clear Summary Report': function(browser){
   	browser
@@ -169,7 +169,7 @@ module.exports = {
 		.execute("$('input[data-param=\"EndDate\"]').data('value','2020-01-14')")
 		.pause(1000)
 		.execute("$('button#reportSubmitButton').trigger('click')")
-		.waitForElementPresent('div#testclearsummary',30000,'Report ran')
+		.waitForElementPresent('div#testclearsummary',60000,'Report ran')
   },
   'Test Details Report': function(browser){
   	browser
@@ -179,7 +179,7 @@ module.exports = {
 		.execute("$('input[data-param=\"EndDate\"]').data('value','2020-01-14')")
 		.pause(1000)
 		.execute("$('button#reportSubmitButton').trigger('click')")
-		.waitForElementPresent('div#testdetails',30000,'Report ran')
+		.waitForElementPresent('div#testdetails',60000,'Report ran')
   },
   'Time Benchmarking Report': function(browser){
   	browser
@@ -188,7 +188,7 @@ module.exports = {
 		.pause(1000)
 		.execute("$('div[data-param=\"ProductID\"] li[data-id=\"67\"]').trigger('click')")
 		.execute("$('button#reportSubmitButton').trigger('click')")
-		.waitForElementPresent('div#timebenchmarking',45000,'Report ran')
+		.waitForElementPresent('div#timebenchmarking',60000,'Report ran')
   },
   'Time In Course Report': function(browser){
   	browser
@@ -198,7 +198,7 @@ module.exports = {
 		.execute("$('input[data-param=\"EndDate\"]').data('value','2020-01-14')")
 		.pause(1000)
 		.execute("$('button#reportSubmitButton').trigger('click')")
-		.waitForElementPresent('div#timeincourse',30000,'Report ran')
+		.waitForElementPresent('div#timeincourse',60000,'Report ran')
   },
   'User List Report': function(browser){
   	browser
@@ -206,7 +206,7 @@ module.exports = {
   		.execute("$('div#reportSelectionContainer ul.dropdown-menu li[data-report=\"userlist\"]').trigger('click')")
 		.pause(1000)
 		.execute("$('button#reportSubmitButton').trigger('click')")
-		.waitForElementPresent('div#userlist',30000,'Report ran')
+		.waitForElementPresent('div#userlist',60000,'Report ran')
   },
   'User Summary Report': function(browser){
   	browser
@@ -216,7 +216,7 @@ module.exports = {
 		.execute("$('input[data-param=\"EndDate\"]').data('value','2020-01-14')")
 		.pause(1000)
 		.execute("$('button#reportSubmitButton').trigger('click')")
-		.waitForElementPresent('div#usersummary',30000,'Report ran')
+		.waitForElementPresent('div#usersummary',60000,'Report ran')
   },
   'end':function(browser){
   	browser.end();
