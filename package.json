@@ -6,6 +6,8 @@
   "scripts": {
     "test": "nightwatch",
     "basic": "nightwatch --tag basic -e default",
+    "html": "nightwatch --tag HTML5 -e default",
+    "flash": "nightwatch --tag Flash -e ie",
     "e2e-setup": "selenium-standalone install",
     "reports": "nightwatch --tag userReports -e default"
   },

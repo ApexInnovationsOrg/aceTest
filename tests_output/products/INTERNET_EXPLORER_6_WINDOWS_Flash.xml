@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="2"
+            tests="1">
+
+  <testsuite name="products.Flash"
+    errors="0" failures="2" hostname="" id="" package="products" skipped="6"
+    tests="1" time="5.700" timestamp="">
+  
+    <testcase name="Proxy Login as self" classname="products.Flash" time="5.700" assertions="1">  <failure message="Testing if element [0;33m&lt;.pageName&gt;[0m is present in 5000ms - expected [0;32m&#34;is present&#34;[0m but got: [0;31m&#34;element could not be located&#34;[0m [0;90m(5696ms)[0m">    at Object.Proxy Login as self (C:\Users\makenzie\Documents\GitHub\aceTest\test\e2e\products\Flash.js:16:22)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+
+    
+      <failure message="    at Object.Proxy Login as self (C:\Users\makenzie\Documents\GitHub\aceTest\test\e2e\products\Flash.js:16:22)">    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+    </testcase>
+  
+
+  
+
+  
+    
+    <testcase
+      name="Launching EHAC Flash" classname="products.Flash">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Launching Hemispheres2.0" classname="products.Flash">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Launching CanadianHemi2.0" classname="products.Flash">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Launching imPULSE2.0" classname="products.Flash">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Launching imPULSE2.0 Refresher" classname="products.Flash">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="end" classname="products.Flash">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

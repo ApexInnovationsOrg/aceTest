@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="products.Flash"
+    errors="1" failures="0" hostname="" id="" package="products" skipped="7"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+    <system-err>
+      [0;31m  Error: An error occurred while retrieving a new session: &#34;Invalid username or password&#34;[0m
+[0;90m       at endReadableNT (_stream_readable.js:1145:12)
+       at process._tickCallback (internal/process/next_tick.js:63:19)[0m
+    </system-err>
+  
+
+  
+    
+    <testcase
+      name="Proxy Login as self" classname="products.Flash">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Launching EHAC Flash" classname="products.Flash">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Launching Hemispheres2.0" classname="products.Flash">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Launching CanadianHemi2.0" classname="products.Flash">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Launching imPULSE2.0" classname="products.Flash">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Launching imPULSE2.0 Refresher" classname="products.Flash">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="end" classname="products.Flash">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
