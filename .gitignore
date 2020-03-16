@@ -3,6 +3,7 @@ testCookie.txt
 .env
 reports/
 screenshots/
+tests_output/
 selenium-debug.log
 selenium-server.log
 package-lock.json

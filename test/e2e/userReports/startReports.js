@@ -107,7 +107,7 @@ module.exports = {
 		.execute("$('button#reportChangeButton').trigger('click')")
   		.execute("$('div#reportSelectionContainer ul.dropdown-menu li[data-report=\"nihsssummary\"]').trigger('click')")
 		.execute("$('input[data-param=\"StartDate\"]').data('value','2020-01-14')")
-		.execute("$('input[data-param=\"EndDate\"]').data('value','2020-01-28')")
+		.execute("$('input[data-param=\"EndDate\"]').data('value','2020-01-16')")
 		.pause(1000)
 		.execute("$('button#reportSubmitButton').trigger('click')")
 		.waitForElementPresent('div#nihsssummary',30000,'Report ran')
