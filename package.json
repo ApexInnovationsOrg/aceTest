@@ -5,11 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "nightwatch",
-    "basic": "nightwatch --tag basic -e default",
-    "html": "nightwatch --tag HTML5 -e default",
-    "flash": "nightwatch --tag Flash -e ie",
-    "e2e-setup": "selenium-standalone install",
-    "reports": "nightwatch --tag userReports -e default"
+    "basic": "nightwatch --tag basic -e default -c conf/nightwatch.conf.js",
+    "html": "nightwatch --tag HTML5 -e default -c conf/nightwatch.conf.js",
+    "flash": "nightwatch --tag Flash -e ie -c conf/nightwatch.conf.js",
+    "e2e-setup": "selenium-standalone install -c conf/nightwatch.conf.js",
+    "reports": "nightwatch --tag userReports -e default -c conf/nightwatch.conf.js",    
+	"test_local": "nightwatch -c conf/nightwatch.conf.local.js",
+    "basic_local": "nightwatch --tag basic -e default -c conf/nightwatch.conf.local.js",
+    "html_local": "nightwatch --tag HTML5 -e default -c conf/nightwatch.conf.local.js",
+    "flash_local": "nightwatch --tag Flash -e ie -c conf/nightwatch.conf.local.js",
+    "e2e-setup_local": "selenium-standalone install -c conf/nightwatch.conf.local.js",
+    "reports_local": "nightwatch --tag userReports -e default -c conf/nightwatch.conf.local.js"
   },
   "repository": {
     "type": "git",
