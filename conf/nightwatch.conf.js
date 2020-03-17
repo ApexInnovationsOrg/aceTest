@@ -1,3 +1,5 @@
+require('env2')('.env'); // optionally store youre Evironment Variables in .env
+
 nightwatch_config = {
   "src_folders": [
     "test/e2e"// Where you are storing your Nightwatch e2e tests
@@ -11,8 +13,8 @@ nightwatch_config = {
 
   common_capabilities: {
     'build': 'nightwatch-browserstack',
-    'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'apexdevelopers1',
-    'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY || 'tzjsGwBVZTs5BRzVXPqg',
+    'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'BROSWERSTACK_USER',
+    'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
     'browserstack.debug': true
   },
 
