@@ -17,7 +17,8 @@
     "reports_local": "nightwatch --tag userReports -e default -c conf/nightwatch.conf.local.js",
     "userFuncs_local": "nightwatch --tag userFunctions -e default -c conf/nightwatch.conf.local.js",
     "userFuncs": "nightwatch --tag userFunctions -e default -c conf/nightwatch.conf.js",
-    "resetPassword": "nightwatch --tag resetPassword -e default -c conf/nightwatch.conf.local.js"
+    "resetPassword": "nightwatch --tag resetPassword -e default -c conf/nightwatch.conf.local.js",
+    "needHelp": "nightwatch --tag needHelp -e default -c conf/nightwatch.conf.local.js"
   },
   "repository": {
     "type": "git",
