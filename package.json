@@ -19,7 +19,8 @@
     "userFuncs": "nightwatch --tag userFunctions -e default -c conf/nightwatch.conf.js",
     "adminFuncs": "nightwatch --tag adminFunctions -e default -c conf/nightwatch.conf.js",
     "adminFuncs_local": "nightwatch --tag adminFunctions -e default -c conf/nightwatch.conf.local.js",
-    "resetPassword": "nightwatch --tag resetPassword -e default -c conf/nightwatch.conf.local.js"
+    "resetPassword": "nightwatch --tag resetPassword -e default -c conf/nightwatch.conf.local.js",
+    "needHelp": "nightwatch --tag needHelp -e default -c conf/nightwatch.conf.local.js"
   },
   "repository": {
     "type": "git",
