@@ -18,7 +18,9 @@
     "userFuncs_local": "nightwatch --tag userFunctions -e default -c conf/nightwatch.conf.local.js",
     "userFuncs": "nightwatch --tag userFunctions -e default -c conf/nightwatch.conf.js",
     "resetPassword": "nightwatch --tag resetPassword -e default -c conf/nightwatch.conf.local.js",
-    "needHelp": "nightwatch --tag needHelp -e default -c conf/nightwatch.conf.local.js"
+    "needHelp": "nightwatch --tag needHelp -e default -c conf/nightwatch.conf.local.js",
+    "needHelp_B": "nightwatch --tag needHelp --test test/e2e/userFunctions/needHelp.js --testcase \"Submit Tech Ticket by Clicking Contact Us\" -e default -c conf/nightwatch.conf.local.js",
+    "needHelp_C": "nightwatch --tag needHelp --test test/e2e/userFunctions/needHelp.js --testcase \"Submit Tech Ticket by Clicking Contact Us While Logged In\" -e default -c conf/nightwatch.conf.local.js"
   },
   "repository": {
     "type": "git",
