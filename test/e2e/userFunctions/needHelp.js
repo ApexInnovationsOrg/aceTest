@@ -48,7 +48,6 @@ module.exports = {
 		selector: 'button[class="btn btn-success"]',
 		index: 0
 	}) //submit the ticket!
-	.pause(5000)
 	.assert.containsText('body', 'Your support request was submitted successfully')
   }, 
 
@@ -91,7 +90,6 @@ module.exports = {
 		selector: 'button[class="btn btn-success"]',
 		index: 0
 	}) //submit the ticket!
-	.pause(5000)
 	.assert.containsText('body', 'Your support request was submitted successfully') 
   },
 
@@ -130,7 +128,6 @@ module.exports = {
 		selector: 'button[class="btn btn-success"]',
 		index: 0
 	}) //submit the ticket!
-	.pause(5000)
 	.assert.containsText('body', 'Your support request was submitted successfully') 
   },
 
@@ -178,7 +175,6 @@ module.exports = {
 		selector: 'button[class="btn btn-success"]',
 		index: 0
 	}) //submit the ticket!
-	.pause(5000)
 	.assert.containsText('body', 'Your support request was submitted successfully') 
   }  
 };
