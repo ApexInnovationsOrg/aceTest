@@ -7,12 +7,11 @@
 /* -Reset Password        -X
 /* -Merge User            -X
 /* -Clone User			  -X
-/* -Edit User Licenses
-/* -Go to Organization
-/* -Proxy Login
-/* -Test Results
-/* -Time in Course
-/* -Welcome Email
+/* -Edit User Licenses    -X
+/* -Proxy Login			  -X
+/* -Test Results          -X
+/* -Time in Course        -X
+/* -Welcome Email		  -X
 /*
 ***********/
 require('env2')('.env');
@@ -107,6 +106,82 @@ module.exports = {
 				selector: 'table#table a',
 				index: 0
 			})
+	},
+	'User page Functions - Edit User Licenses': function (browser) {
+		browser
+			.click('div#main_sidebar input[value="Edit User Licenses"]')
+			.assert.containsText('div#main_news h1',"Edit User Licenses","On Edit User Licenses")
+			.setValue('input#LicenseKey',process.env.EDIT_USER_LICENSE_KEY)
+			.click('input.submit[value="Register License Key"]')			
+			.assert.containsText('div#main_news p',"The license key " + process.env.EDIT_USER_LICENSE_KEY + " was successfully registered","License key was registered")		
+			.pause(2000)
+			.click('input[value="Delete"]')			
+			.acceptAlert()
+			.assert.containsText('div#main_news p',"The user's access to the license was successfully deleted","License key deleted")				
+			.click('div#main_sidebar input[value="Go to User"]')
+	},
+	'User page Functions - Proxy Login': function (browser) {
+		browser
+			.assert.containsText('div#main_news h1',"Users","On User")
+			.click('div#main_sidebar input[value="Proxy Login"]')
+			.pause(1000);		
+			
+		browser.windowHandles(function(result){
+			browser.switchWindow(result.value[1]);		
+			browser
+				.assert.containsText('div#main_news h1.pageName',"My Curriculum","On My Curriculum")
+				.closeWindow();
+			browser.switchWindow(result.value[0]);
+		});
+		
+		browser
+			.assert.containsText('div#main_news h1',"Users","Back On User")
+	},
+	'User page Functions - Test Results': function (browser) {
+		browser
+			.assert.containsText('div#main_news h1',"Users","On User")
+			.click('div#main_sidebar input[value="Test Results"]')
+			.pause(1000);		
+			
+		browser.windowHandles(function(result){
+			browser.switchWindow(result.value[1]);		
+			browser
+				.assert.containsText('div#main_news h1',"The user does not have any test results!","On Test Results")
+				.closeWindow();
+			browser.switchWindow(result.value[0]);
+		});
+		
+		browser
+			.assert.containsText('div#main_news h1',"Users","Back On User")
+	},
+	'User page Functions - Test Results': function (browser) {
+		browser
+			.assert.containsText('div#main_news h1',"Users","On User")
+			.click('div#main_sidebar input[value="Test Results"]')
+			.pause(1000);		
+			
+		browser.windowHandles(function(result){
+			browser.switchWindow(result.value[1]);		
+			browser
+				.assert.containsText('div#main_news h1',"The user does not have any test results!","On Test Results")
+				.closeWindow();
+			browser.switchWindow(result.value[0]);
+		});
+		
+		browser
+			.assert.containsText('div#main_news h1',"Users","Back On User")
+	},
+	'User page Functions - Time In Course': function (browser) {
+		browser
+			.click('div#main_sidebar input[value="Time in Course"]')
+			.assert.containsText('div#main_news h1',"Time in Course","On Time in Course")			
+			.click('div#main_sidebar input[value="Go to User"]')
+	},
+	'User page Functions - Welcome Email': function (browser) {
+		browser
+			.click('div#main_sidebar input[value="Welcome Email"]')
+			.acceptAlert()
+			.assert.urlContains('welcome=1','Welcome email sent')
 	},
 	'User page Functions - Delete User': function (browser) {
 		browser
