@@ -2,6 +2,7 @@
 /*Testing all functions on Organizations from admin site
 /* -Find Apex HQ			-X		
 /* -Update (Name/etc..)		-X
+/* -Add/Remove Admin		-X
 /* -Add Department			-X
 /* -Add License				-X
 /* -Add User				-X
@@ -54,6 +55,15 @@ module.exports = {
 			.click('select[id="StateID"] option[value="27"]')
 			.click('input[value="Update Organization"]')
 			.assert.containsText('div#main_news p',"Organization saved successfully","Organization reverted")	
+	},
+	'Organization page Functions - Add/Remove Admin': function (browser) {
+		browser
+			.click('input[type="button"][value="Remove"][onClick="window.location.href = \'Organizations.php?ID=221&DeleteAdmin=275515\';"]')
+			.assert.containsText('div#main_news p',"Administrator removed successfully","Admin Removed")			
+			.click('select[id="NewAdminID"] option[value="275515"]')
+			.click('input[value="Update Organization"]')
+			.assert.elementPresent('#Admin275515ID','Admin added back to org')
+			.assert.containsText('div#main_news p',"Organization saved successfully","Organization reverted")
 	},
 	'Organization page Functions - Add Department': function (browser) {
 		browser
