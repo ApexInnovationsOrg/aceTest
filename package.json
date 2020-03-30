@@ -22,6 +22,7 @@
     "adminFuncs_user_local": "nightwatch --tag adminFunctions --test test/e2e/adminFunctions/userAccountFunctions.js -e default -c conf/nightwatch.conf.local.js",
     "adminFuncs_organization_local": "nightwatch --tag adminFunctions --test test/e2e/adminFunctions/organizationFunctions.js -e default -c conf/nightwatch.conf.local.js",
     "adminFuncs_department_local": "nightwatch --tag adminFunctions --test test/e2e/adminFunctions/departmentFunctions.js -e default -c conf/nightwatch.conf.local.js",
+    "adminFuncs_license_local": "nightwatch --tag adminFunctions --test test/e2e/adminFunctions/licenseFunctions.js -e default -c conf/nightwatch.conf.local.js",
     "resetPassword": "nightwatch --tag resetPassword -e default -c conf/nightwatch.conf.local.js",
     "needHelp": "nightwatch --tag needHelp -e default -c conf/nightwatch.conf.local.js",
     "needHelp_B": "nightwatch --tag needHelp --test test/e2e/userFunctions/needHelp.js --testcase \"Submit Tech Ticket by Clicking Contact Us\" -e default -c conf/nightwatch.conf.local.js",

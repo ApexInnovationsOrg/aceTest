@@ -1,5 +1,5 @@
 /**********/
-/*Testing all functions on Organizations from admin site
+/*Testing all functions on Departments from admin site
 /* -Find Apex HQ			-X		
 /* -Update (Name/etc..)		-X
 /* -Add/Remove Admin		-X
