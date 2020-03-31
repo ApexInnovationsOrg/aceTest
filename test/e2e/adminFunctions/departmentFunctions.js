@@ -3,7 +3,6 @@
 /* -Find Apex HQ			-X		
 /* -Update (Name/etc..)		-X
 /* -Add/Remove Admin		-X
-/* -Deactivate Department	-X
 /* -Create Department		-X
 /* -Merge Departments		-X
 /*
@@ -56,16 +55,6 @@ module.exports = {
 			.assert.elementPresent('#Admin275515ID','Admin added back to dept')
 			.assert.containsText('div#main_news p',"Department saved successfully","Department reverted")			
 	},
-	'Department page Functions - Deactivate Department': function (browser) {
-		browser
-			.click('div#main_sidebar input[value="Deactivate Department"]')
-			.assert.urlContains('Deactivate=true',"Deactivated");
-		browser.expect.element('#Active').to.not.be.selected;	
-		browser
-			.click('#Active')	
-			.click('input[value="Update Department"]')
-			.assert.containsText('div#main_news p',"Department saved successfully","Department reverted")
-	},	
 	'Department page Functions - Create Department': function (browser) {
 		browser
 			.click('div#main_sidebar input[value="Create Department"]')
@@ -80,7 +69,6 @@ module.exports = {
 			.url('https://' + process.env.HOST + '/admin/Organizations.php?ID=221')
 			.execute("$('a:contains(\"Development Clone\")')[0].click()")
 			.click('div#main_sidebar input[value="Merge Departments"]')
-			.click('select[name="MergeID"]')		
 			.click('select[name="MergeID"] option[value="1522"]')
 			.click('input[value="Merge Departments"]')
 			.assert.containsText('div#main_news p',"Departments merged successfully","Departments Merged")	
