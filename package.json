@@ -6,17 +6,18 @@
   "scripts": {
     "e2e-setup": "selenium-standalone install",
     "test": "nightwatch",
-	  "test_local": "nightwatch -c conf/nightwatch.conf.local.js",
+    "test_local": "nightwatch -c conf/nightwatch.conf.local.js",
     "basic": "nightwatch --tag basic -e default -c conf/nightwatch.conf.js",
     "basic_local": "nightwatch --tag basic -e default -c conf/nightwatch.conf.local.js",
     "html": "nightwatch --tag HTML5 -e default -c conf/nightwatch.conf.js",
     "html_local": "nightwatch --tag HTML5 -e default -c conf/nightwatch.conf.local.js",
     "flash": "nightwatch --tag Flash -e ie -c conf/nightwatch.conf.js",
     "flash_local": "nightwatch --tag Flash -e ie -c conf/nightwatch.conf.local.js",
-    "reports": "nightwatch --tag userReports -e default -c conf/nightwatch.conf.js",    
+    "reports": "nightwatch --tag userReports -e default -c conf/nightwatch.conf.js",
     "reports_local": "nightwatch --tag userReports -e default -c conf/nightwatch.conf.local.js",
     "userFuncs_local": "nightwatch --tag userFunctions -e default -c conf/nightwatch.conf.local.js",
-    "userFuncs": "nightwatch --tag userFunctions -e default -c conf/nightwatch.conf.local.js"
+    "userFuncs": "nightwatch --tag userFunctions -e default -c conf/nightwatch.conf.local.js",
+    "nihss": "nightwatch --tag closedcaptioning -e default -c conf/nightwatch.conf.local.js"
   },
   "repository": {
     "type": "git",
