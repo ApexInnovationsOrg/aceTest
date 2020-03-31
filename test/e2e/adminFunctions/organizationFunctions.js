@@ -6,7 +6,6 @@
 /* -Add Department			-X
 /* -Add License				-X
 /* -Add User				-X
-/* -Clone Organization		-X
 /* -Create Organization		-X
 /* -Move Seats				-X
 /* -Move Users				-X
@@ -91,16 +90,6 @@ module.exports = {
 			.back()
 			.assert.containsText('div#main_news h1',"Organizations","Back to Organizations")
 			.assert.urlContains('Organizations.php?ID=221',"On Apex HQ")					
-	},
-	'Organization page Functions - Clone Organization': function (browser) {
-		browser
-			.click('div#main_sidebar input[value="Clone Organization"]')			
-			.setAlertText('Apex HQ Clone')		
-			.acceptAlert()
-			.assert.urlContains('CloneID=221',"Organization used")
-			.back()
-			.assert.containsText('div#main_news h1',"Organizations","Back to Organizations")	
-			.assert.urlContains('Organizations.php?ID=221',"On Apex HQ")				
 	},
 	'Organization page Functions - Create Organization': function (browser) {
 		browser
